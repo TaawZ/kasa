@@ -1,0 +1,6 @@
+.rating {
+    display: flex;
+}
+.color {
+    fill: #FF6060 !important;
+}
