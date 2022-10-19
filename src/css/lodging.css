@@ -12,7 +12,6 @@
 button {
 	position: absolute;
 	height: 100%;
-	width: 50px;
 	border: none;
 	cursor: pointer; 
 	background-color: transparent;
@@ -41,17 +40,60 @@ button {
 {
 	display: flex;
 	gap: 10px;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.infos{
+.infos-container{
 	display: flex;
 	justify-content: space-between;
-	
+	color: #FF6060;
+}
+
+.host-infos div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 .host-portrait{
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
+}
+.dropdown-container{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	.index{
+		display: none;
+	}
+	button img{
+		width: 40%;		
+	}
+	.next{
+		right: 0px;
+	}
+	.prev{
+		left: 0px;
+	}
+	.infos-container{
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	.host-infos{
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.dropdown-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
 }

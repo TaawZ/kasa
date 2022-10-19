@@ -32,11 +32,25 @@ article {
 	width: 340px;
 	height: 340px;
 }
-h3 {
+.gallery h3 {
 	font-size: 0.8em;
 	position: absolute;
 	bottom: 10px;
 	left: 30px;
 	font-weight: bold;
 	z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	article {
+		width:auto;
+		height: auto;
+	}
+	.linear-gradient{
+		background: none;
+	}
+	.gallery{
+		padding: 0px;
+		background-color: white;
+	}
 }

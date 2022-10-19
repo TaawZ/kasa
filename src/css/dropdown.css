@@ -1,0 +1,39 @@
+.accordion {
+	width: 45%;
+}
+.accordion-title{
+	display: flex;
+	justify-content: space-between;
+	background: #FF6060;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	padding: 10px;
+}
+.accordion-content{
+	background: #F7F7F7;
+	border-radius: 0px 0px 10px 10px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: #FF6060;
+	padding: 20px 10px;
+	text-align: start;
+
+}
+.accordion-list{
+	list-style: none;
+	padding: 0px;
+}
+
+.about {
+	width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+	.accordion {
+		width: 100%;
+	}
+}

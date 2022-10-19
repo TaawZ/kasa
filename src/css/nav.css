@@ -20,3 +20,15 @@ nav a{
 	align-items: center;
 	text-align: right;
 }
+
+@media only screen and (max-width: 768px) {
+	nav{
+		gap: 10px;
+	}
+	
+	nav a{
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 17px;
+	}
+}
