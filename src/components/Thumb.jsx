@@ -1,16 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-function Thumb ({title, location, id, cover}) {
-    return (
-            <Link to={`/lodging?id=${id}`}>
-                <article className="linear-gradient">
-                    <img src={cover} alt={title} />
-                    <h3>{title}</h3>
-                    <p>{location}</p>
-                </article>
-            </Link>
-    )
+import PropTypes from "prop-types";
+function Thumb({ title, location, id, cover }) {
+	return (
+		<Link to={`/lodging?id=${id}`}>
+			<article className="linear-gradient">
+				<img src={cover} alt={title} />
+				<h3>{title}</h3>
+				<p>{location}</p>
+			</article>
+		</Link>
+	);
 }
 
-export default Thumb
+Thumb.propTypes = {
+	title: PropTypes.string.isRequired,
+	location: PropTypes.string.isRequired,
+	id: PropTypes.string.isRequired,
+	cover: PropTypes.string.isRequired,
+};
+export default Thumb;

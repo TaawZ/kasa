@@ -2,8 +2,8 @@
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 55px;
-    padding: 55px;
+    row-gap: 50px;
+    padding: 50px;
     background-color: #F7F7F7;
     border-radius: 25px;
     margin: 50px 0;
@@ -29,8 +29,8 @@ article {
 	position: relative;
 	background-color: rgb(255, 96, 96);
 	border-radius: 10px;
-	width: 340px;
-	height: 340px;
+	width: 540px;
+	height: 540px;
 }
 .gallery h3 {
 	font-size: 0.8em;

@@ -1,0 +1,22 @@
+footer{
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.918);
+	margin-top: 50px; 
+}
+
+  footer img{
+	height: 30px;
+	margin-top: 50px;
+}
+
+  footer p{
+	display: flex;
+	flex-basis: 100%;
+	justify-content: center;
+	color: whitesmoke;
+}

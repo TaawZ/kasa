@@ -4,6 +4,7 @@ import Lodging from "../pages/Lodging";
 import Error from "../pages/404";
 import About from "../pages/About";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import "../css/app.css";
 
 function Router() {
@@ -15,9 +16,10 @@ function Router() {
 					<Route path="/" element={<Home />} />
 					<Route path="/lodging" element={<Lodging />} />
 					<Route path="/about" element={<About />} />
-					<Route path="error" element={<Error />} />
+					<Route path="*" element={<Error />} />
 				</Routes>
 			</div>
+			<Footer />
 		</div>
 	);
 }
